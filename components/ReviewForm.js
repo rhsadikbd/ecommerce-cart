@@ -10,7 +10,7 @@ app.component("review-form", {
     <textarea id="review" v-model="review"></textarea>
 
     <label for="rating">Rating:</label>
-    <select id="rating" v-model.number="rating" style="margin-bottom:20px">
+    <select id="rating" v-model.number="rating">
       <option>5</option>
       <option>4</option>
       <option>3</option>
@@ -18,7 +18,7 @@ app.component("review-form", {
       <option>1</option>
     </select>
 
-    <label for="recommend">Would you recommend this product?</label>
+    <label for="recommend" style="margin-top:20px">Would you recommend this product?</label>
     <select id="recommend" v-model="recommend">
       <option>Yes</option>
       <option>No</option>
